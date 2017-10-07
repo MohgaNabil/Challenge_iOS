@@ -1,0 +1,12 @@
+/* 
+  local.strings
+  Auth0Challenge
+
+  Created by Mohga Nabil on 10/7/17.
+  Copyright © 2017 IBM. All rights reserved.
+*/
+
+"EMTPY_USERNAME"="Username can't be empty";
+"EMPTY_PASSWORD"="Password can't be empty";
+"SHORT_PASSWORD"="Passowrd can't be less than 6 characters";
+"USER_EXISTS"="Username already registered";

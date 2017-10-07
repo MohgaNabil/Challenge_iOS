@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "bWq-si-Zeh"; */
+"bWq-si-Zeh.text" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "icJ-P3-uM3"; */
+"icJ-P3-uM3.normalTitle" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "nqH-Dx-Pps"; */
+"nqH-Dx-Pps.normalTitle" = "Register";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "oqY-oI-Lcy"; */
+"oqY-oI-Lcy.text" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "xSX-mh-EtB"; */
+"xSX-mh-EtB.normalTitle" = "Logout";
