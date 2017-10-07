@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Connection</key>
+	<string>Username-Password-Authentication</string>
+	<key>ClientId</key>
+	<string>PAn11swGbMAVXVDbSCpnITx5Utsxz1co</string>
+	<key>LoginURI</key>
+	<string>/oauth/ro</string>
+	<key>Domain</key>
+	<string>mimo-test.auth0.com</string>
+	<key>SignUpURI</key>
+	<string>/dbconnections/signup</string>
+	<key>UserProfileURI</key>
+	<string>/tokeninfo</string>
+</dict>
+</plist>

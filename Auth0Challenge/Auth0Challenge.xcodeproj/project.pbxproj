@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A95AA9DB1F88455E00171724 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95AA9DA1F88455E00171724 /* UserProfileViewController.swift */; };
+		A95AA9E11F88544E00171724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95AA9E01F88544E00171724 /* Main.storyboard */; };
+		A9B08CD01F87F45C0034EE52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B08CCF1F87F45C0034EE52 /* AppDelegate.swift */; };
+		A9B08CD21F87F45C0034EE52 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B08CD11F87F45C0034EE52 /* AuthViewController.swift */; };
+		A9B08CD71F87F45C0034EE52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B08CD61F87F45C0034EE52 /* Assets.xcassets */; };
+		A9B08CDA1F87F45C0034EE52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B08CD81F87F45C0034EE52 /* LaunchScreen.storyboard */; };
+		A9B08CE51F87F45C0034EE52 /* Auth0ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B08CE41F87F45C0034EE52 /* Auth0ChallengeTests.swift */; };
+		A9B08CFF1F87F5110034EE52 /* Auth0Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B08CFE1F87F5110034EE52 /* Auth0Services.swift */; };
+		A9B08D011F87F5370034EE52 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9B08D001F87F5370034EE52 /* Auth0.plist */; };
+		A9B08D071F88189D0034EE52 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B08D061F88189D0034EE52 /* UserProfile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9B08CE11F87F45C0034EE52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9B08CC41F87F45C0034EE52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9B08CCB1F87F45C0034EE52;
+			remoteInfo = Auth0Challenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A95AA9DA1F88455E00171724 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		A95AA9E01F88544E00171724 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A9B08CCC1F87F45C0034EE52 /* Auth0Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auth0Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B08CCF1F87F45C0034EE52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9B08CD11F87F45C0034EE52 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		A9B08CD61F87F45C0034EE52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9B08CD91F87F45C0034EE52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9B08CDB1F87F45C0034EE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B08CE01F87F45C0034EE52 /* Auth0ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Auth0ChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B08CE41F87F45C0034EE52 /* Auth0ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth0ChallengeTests.swift; sourceTree = "<group>"; };
+		A9B08CE61F87F45C0034EE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B08CFE1F87F5110034EE52 /* Auth0Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth0Services.swift; sourceTree = "<group>"; };
+		A9B08D001F87F5370034EE52 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		A9B08D061F88189D0034EE52 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9B08CC91F87F45C0034EE52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B08CDD1F87F45C0034EE52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9B08CC31F87F45C0034EE52 = {
+			isa = PBXGroup;
+			children = (
+				A9B08CCE1F87F45C0034EE52 /* Auth0Challenge */,
+				A9B08CE31F87F45C0034EE52 /* Auth0ChallengeTests */,
+				A9B08CCD1F87F45C0034EE52 /* Products */,
+				BF85F4C43CE4AB3526A642DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9B08CCD1F87F45C0034EE52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9B08CCC1F87F45C0034EE52 /* Auth0Challenge.app */,
+				A9B08CE01F87F45C0034EE52 /* Auth0ChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9B08CCE1F87F45C0034EE52 /* Auth0Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				A9B08D051F880DA40034EE52 /* Services */,
+				A9B08D041F880D9C0034EE52 /* Models */,
+				A9B08D031F880D8C0034EE52 /* Controllers */,
+				A9B08D021F880D720034EE52 /* Views */,
+				A9B08CCF1F87F45C0034EE52 /* AppDelegate.swift */,
+				A9B08CD61F87F45C0034EE52 /* Assets.xcassets */,
+				A9B08CDB1F87F45C0034EE52 /* Info.plist */,
+				A9B08D001F87F5370034EE52 /* Auth0.plist */,
+			);
+			path = Auth0Challenge;
+			sourceTree = "<group>";
+		};
+		A9B08CE31F87F45C0034EE52 /* Auth0ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9B08CE41F87F45C0034EE52 /* Auth0ChallengeTests.swift */,
+				A9B08CE61F87F45C0034EE52 /* Info.plist */,
+			);
+			path = Auth0ChallengeTests;
+			sourceTree = "<group>";
+		};
+		A9B08D021F880D720034EE52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9B08CD81F87F45C0034EE52 /* LaunchScreen.storyboard */,
+				A95AA9E01F88544E00171724 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A9B08D031F880D8C0034EE52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9B08CD11F87F45C0034EE52 /* AuthViewController.swift */,
+				A95AA9DA1F88455E00171724 /* UserProfileViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A9B08D041F880D9C0034EE52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9B08D061F88189D0034EE52 /* UserProfile.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A9B08D051F880DA40034EE52 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A9B08CFE1F87F5110034EE52 /* Auth0Services.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		BF85F4C43CE4AB3526A642DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9B08CCB1F87F45C0034EE52 /* Auth0Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B08CF41F87F45C0034EE52 /* Build configuration list for PBXNativeTarget "Auth0Challenge" */;
+			buildPhases = (
+				A9B08CC81F87F45C0034EE52 /* Sources */,
+				A9B08CC91F87F45C0034EE52 /* Frameworks */,
+				A9B08CCA1F87F45C0034EE52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Auth0Challenge;
+			productName = Auth0Challenge;
+			productReference = A9B08CCC1F87F45C0034EE52 /* Auth0Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9B08CDF1F87F45C0034EE52 /* Auth0ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B08CF71F87F45C0034EE52 /* Build configuration list for PBXNativeTarget "Auth0ChallengeTests" */;
+			buildPhases = (
+				E9BF610736A460BC89C4F89A /* [CP] Check Pods Manifest.lock */,
+				A9B08CDC1F87F45C0034EE52 /* Sources */,
+				A9B08CDD1F87F45C0034EE52 /* Frameworks */,
+				A9B08CDE1F87F45C0034EE52 /* Resources */,
+				419BD3BB3D47A22C4476611E /* [CP] Embed Pods Frameworks */,
+				9E3C018819722D40AB133E40 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9B08CE21F87F45C0034EE52 /* PBXTargetDependency */,
+			);
+			name = Auth0ChallengeTests;
+			productName = Auth0ChallengeTests;
+			productReference = A9B08CE01F87F45C0034EE52 /* Auth0ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9B08CC41F87F45C0034EE52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					A9B08CCB1F87F45C0034EE52 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Q7W47GFKL3;
+						ProvisioningStyle = Automatic;
+					};
+					A9B08CDF1F87F45C0034EE52 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Q7W47GFKL3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9B08CCB1F87F45C0034EE52;
+					};
+				};
+			};
+			buildConfigurationList = A9B08CC71F87F45C0034EE52 /* Build configuration list for PBXProject "Auth0Challenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9B08CC31F87F45C0034EE52;
+			productRefGroup = A9B08CCD1F87F45C0034EE52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9B08CCB1F87F45C0034EE52 /* Auth0Challenge */,
+				A9B08CDF1F87F45C0034EE52 /* Auth0ChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9B08CCA1F87F45C0034EE52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B08CDA1F87F45C0034EE52 /* LaunchScreen.storyboard in Resources */,
+				A9B08CD71F87F45C0034EE52 /* Assets.xcassets in Resources */,
+				A9B08D011F87F5370034EE52 /* Auth0.plist in Resources */,
+				A95AA9E11F88544E00171724 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B08CDE1F87F45C0034EE52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		419BD3BB3D47A22C4476611E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auth0Challenge-Auth0ChallengeTests/Pods-Auth0Challenge-Auth0ChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3C018819722D40AB133E40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auth0Challenge-Auth0ChallengeTests/Pods-Auth0Challenge-Auth0ChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9BF610736A460BC89C4F89A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9B08CC81F87F45C0034EE52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95AA9DB1F88455E00171724 /* UserProfileViewController.swift in Sources */,
+				A9B08D071F88189D0034EE52 /* UserProfile.swift in Sources */,
+				A9B08CD21F87F45C0034EE52 /* AuthViewController.swift in Sources */,
+				A9B08CFF1F87F5110034EE52 /* Auth0Services.swift in Sources */,
+				A9B08CD01F87F45C0034EE52 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B08CDC1F87F45C0034EE52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B08CE51F87F45C0034EE52 /* Auth0ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9B08CE21F87F45C0034EE52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9B08CCB1F87F45C0034EE52 /* Auth0Challenge */;
+			targetProxy = A9B08CE11F87F45C0034EE52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9B08CD81F87F45C0034EE52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B08CD91F87F45C0034EE52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9B08CF21F87F45C0034EE52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9B08CF31F87F45C0034EE52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9B08CF51F87F45C0034EE52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				INFOPLIST_FILE = Auth0Challenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.cio.be.Auth0Challenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A9B08CF61F87F45C0034EE52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				INFOPLIST_FILE = Auth0Challenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.cio.be.Auth0Challenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A9B08CF81F87F45C0034EE52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				INFOPLIST_FILE = Auth0ChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.cio.be.Auth0ChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auth0Challenge.app/Auth0Challenge";
+			};
+			name = Debug;
+		};
+		A9B08CF91F87F45C0034EE52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				INFOPLIST_FILE = Auth0ChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.cio.be.Auth0ChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auth0Challenge.app/Auth0Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9B08CC71F87F45C0034EE52 /* Build configuration list for PBXProject "Auth0Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B08CF21F87F45C0034EE52 /* Debug */,
+				A9B08CF31F87F45C0034EE52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B08CF41F87F45C0034EE52 /* Build configuration list for PBXNativeTarget "Auth0Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B08CF51F87F45C0034EE52 /* Debug */,
+				A9B08CF61F87F45C0034EE52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B08CF71F87F45C0034EE52 /* Build configuration list for PBXNativeTarget "Auth0ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B08CF81F87F45C0034EE52 /* Debug */,
+				A9B08CF91F87F45C0034EE52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9B08CC41F87F45C0034EE52 /* Project object */;
+}
