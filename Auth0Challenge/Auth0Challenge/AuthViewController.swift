@@ -16,7 +16,9 @@ class AuthViewController: UIViewController {
 	@IBOutlet weak var loginBtn: UIButton!
 	
 	@IBAction func register(_ sender: UIButton) {
-		if let err = self.validateCredentials(){
+		if let err = self.validateUserName(){
+			self.displayAlerts(err: err)
+		}else if let err = self.validatePassword(){
 			self.displayAlerts(err: err)
 		}else{
 			Auth0Services.getInstance().signUp(email: email.text, password: passowrd.text) { (success,err) in
@@ -31,7 +33,9 @@ class AuthViewController: UIViewController {
 	
 	
 	@IBAction func login(_ sender: UIButton) {
-		if let err = self.validateCredentials(){
+		if let err = self.validateUserName(){
+			self.displayAlerts(err: err)
+		}else if let err = self.validatePassword(){
 			self.displayAlerts(err: err)
 		}else{
 			Auth0Services.getInstance().signIn(email: email.text, password: passowrd.text) { (success,err) in
@@ -49,11 +53,14 @@ class AuthViewController: UIViewController {
 		}
 	}
 	
-	func validateCredentials()-> ErrorConstants?{
+	func validateUserName()-> ErrorConstants?{
 		guard self.email.text != nil && !self.email.text.isEmpty else {
 			return .EMTPY_USERNAME
 		}
-		
+		return nil
+	}
+	
+	func validatePassword()->ErrorConstants?{
 		guard self.passowrd.text != nil && !self.passowrd.text.isEmpty else{
 			return .EMPTY_PASSWORD
 		}

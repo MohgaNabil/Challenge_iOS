@@ -186,12 +186,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9B08CF71F87F45C0034EE52 /* Build configuration list for PBXNativeTarget "Auth0ChallengeTests" */;
 			buildPhases = (
-				E9BF610736A460BC89C4F89A /* [CP] Check Pods Manifest.lock */,
 				A9B08CDC1F87F45C0034EE52 /* Sources */,
 				A9B08CDD1F87F45C0034EE52 /* Frameworks */,
 				A9B08CDE1F87F45C0034EE52 /* Resources */,
-				419BD3BB3D47A22C4476611E /* [CP] Embed Pods Frameworks */,
-				9E3C018819722D40AB133E40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,54 +263,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		419BD3BB3D47A22C4476611E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auth0Challenge-Auth0ChallengeTests/Pods-Auth0Challenge-Auth0ChallengeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E3C018819722D40AB133E40 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auth0Challenge-Auth0ChallengeTests/Pods-Auth0Challenge-Auth0ChallengeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E9BF610736A460BC89C4F89A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9B08CC81F87F45C0034EE52 /* Sources */ = {

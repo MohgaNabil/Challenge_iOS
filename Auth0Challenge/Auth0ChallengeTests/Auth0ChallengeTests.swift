@@ -10,10 +10,14 @@ import XCTest
 @testable import Auth0Challenge
 
 class Auth0ChallengeTests: XCTestCase {
-    
+	
+	var authViewController:AuthViewController! = nil
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+		authViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CredentialsForm") as! AuthViewController
+		authViewController.email = UITextView()
+		authViewController.passowrd = UITextView()
     }
     
     override func tearDown() {
@@ -21,11 +25,19 @@ class Auth0ChallengeTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testUserNameIsEmpty() {
+		authViewController.email.text = "mohga.mkamel@gmail.com"
+		XCTAssertNil(authViewController.validateUserName(), "Username is not empty nor nil")
+		
     }
-    
+	func testPasswordIsEmpty() {
+		authViewController.passowrd.text = "Yujin@123"
+		XCTAssertNil(authViewController.validatePassword(), "Password is not empty nor nil")
+	}
+	func testPasswordLegnth() {
+		authViewController.passowrd.text = "Yuji"
+		XCTAssertNotNil(authViewController.validatePassword(), "Password is < 6 chars")
+	}
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
