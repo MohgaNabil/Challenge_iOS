@@ -74,7 +74,7 @@ class AuthViewController: UIViewController {
 	func displayAlerts(err:ErrorConstants) {
 		DispatchQueue.main.async {
 			let errMsg = NSLocalizedString(err.rawValue, comment: "")
-			let alertVC = UIAlertController(title: "Error", message: errMsg, preferredStyle: .alert)
+			let alertVC = UIAlertController(title: "iOS Challenge", message: errMsg, preferredStyle: .alert)
 			alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 			self.present(alertVC, animated: true, completion: nil)
 		}
