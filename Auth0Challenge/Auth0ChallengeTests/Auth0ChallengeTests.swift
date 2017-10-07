@@ -38,6 +38,22 @@ class Auth0ChallengeTests: XCTestCase {
 		authViewController.passowrd.text = "Yuji"
 		XCTAssertNotNil(authViewController.validatePassword(), "Password is < 6 chars")
 	}
+	func testSignIn(){
+		authViewController.email.text = "mohga.mkamel@gmail.com"
+		authViewController.passowrd.text = "Yujin@123"
+		Auth0Services.getInstance().signIn(email: authViewController.email.text, password: authViewController.passowrd.text) { (success, err) in
+			XCTAssertNil((err == nil && success), "Sucessfully logged in")
+		}
+		
+	}
+	func testSignup(){
+		authViewController.email.text = "mohga.mkamel@gmail.com"
+		authViewController.passowrd.text = "Yujin@123"
+		Auth0Services.getInstance().signUp(email: authViewController.email.text, password: authViewController.passowrd.text) { (success, err) in
+			XCTAssertNotNil((err != nil && !success), "User already signed up")
+		}
+		
+	}
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
