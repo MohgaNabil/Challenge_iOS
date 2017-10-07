@@ -7,12 +7,7 @@
 //
 
 import UIKit
-enum ErrorConstants:String {
-	case EMTPY_USERNAME = "EMTPY_USERNAME"
-	case EMPTY_PASSWORD = "EMPTY_PASSWORD"
-	case SHORT_PASSWORD = "SHORT_PASSWORD"
-	case USER_EXISTS = "USER_EXISTS"
-}
+
 class AuthViewController: UIViewController {
 	
 	@IBOutlet weak var email: UITextView!
@@ -24,11 +19,11 @@ class AuthViewController: UIViewController {
 		if let err = self.validateCredentials(){
 			self.displayAlerts(err: err)
 		}else{
-			Auth0Services.getInstance().signUp(email: email.text, password: passowrd.text) { (success) in
+			Auth0Services.getInstance().signUp(email: email.text, password: passowrd.text) { (success,err) in
 				if success{
-					//To-do: navigate to user profile
+					self.displayAlerts(err: ErrorConstants.USER_REGISTERED)
 				}else{
-					//To-do: Display alert
+					self.displayAlerts(err: err!)
 				}
 			}
 		}
@@ -39,7 +34,7 @@ class AuthViewController: UIViewController {
 		if let err = self.validateCredentials(){
 			self.displayAlerts(err: err)
 		}else{
-			Auth0Services.getInstance().signIn(email: email.text, password: passowrd.text) { (success) in
+			Auth0Services.getInstance().signIn(email: email.text, password: passowrd.text) { (success,err) in
 				if success{
 					let story = UIStoryboard(name: "Main", bundle: nil)
 					let userProfileViewController = story.instantiateViewController(withIdentifier: "Userprofile") as! UserProfileViewController
@@ -48,7 +43,7 @@ class AuthViewController: UIViewController {
 					}
 					
 				}else{
-					//To-do: Display alert
+					self.displayAlerts(err: err!)
 				}
 			}
 		}
@@ -70,10 +65,12 @@ class AuthViewController: UIViewController {
 	}
 	
 	func displayAlerts(err:ErrorConstants) {
-		let errMsg = NSLocalizedString(err.rawValue, comment: "")
-		let alertVC = UIAlertController(title: "Error", message: errMsg, preferredStyle: .alert)
-		alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-		self.present(alertVC, animated: true, completion: nil)
+		DispatchQueue.main.async {
+			let errMsg = NSLocalizedString(err.rawValue, comment: "")
+			let alertVC = UIAlertController(title: "Error", message: errMsg, preferredStyle: .alert)
+			alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+			self.present(alertVC, animated: true, completion: nil)
+		}
 	}
 }
 

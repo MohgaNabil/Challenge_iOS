@@ -8,3 +8,7 @@
 "EMTPY_USERNAME" = "Username can't be empty";
 "EMPTY_PASSWORD" = "Password can't be empty";
 "SHORT_PASSWORD" = "Password can't be less than 6 characters";
+"USER_EXISTS" = "User is already registered";
+"USER_NOT_REGISTERED" = "Invalid username or password, if not a user, you needs to resgister first";
+"USER_REGISTERED" = "Registeration is complete, please login to access your profile";
+"INTERNAL_SERVER_ERROR" = "Something went wrong, please try again later";

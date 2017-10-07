@@ -31,7 +31,7 @@ class Auth0Services {
 			self.clientId = configurations["ClientId"] as? String
 		}
 	}
-	public func signIn(email:String, password:String,completionHandler:@escaping (_ sucess:Bool)->Void){
+	public func signIn(email:String, password:String,completionHandler:@escaping (_ sucess:Bool,_ err:ErrorConstants?)->Void){
 		if self.configurations != nil && self.domain != nil && clientId != nil && self.connection != nil{
 			if let loginURI = self.configurations!["LoginURI"]{
 				if let serviceURL = URL(string: "https://\(self.domain!)\(loginURI)"){
@@ -52,36 +52,36 @@ class Auth0Services {
 							if error == nil && data != nil{
 								if let jsonResult = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) as? NSDictionary{
 									if jsonResult?["error"] != nil{
-										completionHandler(false)
+										completionHandler(false,ErrorConstants.USER_NOT_REGISTERED)
 									}else{
 										self.token = jsonResult?["id_token"] as? String
-										completionHandler(true)
+										completionHandler(true,nil)
 
 									}
 								}else{
-									completionHandler(false)
+									completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 								}
 							}else{
-								completionHandler(false)
+								completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 							}
 						})
 						task.resume()
 					}else{
-						completionHandler(false)
+						completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 					}
 				}else{
-					completionHandler(false)
+					completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 				}
 			}else{
-				completionHandler(false)
+				completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 			}
 			
 		}else{
-			completionHandler(false)
+			completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 		}
 	}
 	
-	public func signUp(email:String, password:String,completionHandler:@escaping (_ sucess:Bool)->Void){
+	public func signUp(email:String, password:String,completionHandler:@escaping (_ sucess:Bool,_ err:ErrorConstants?)->Void){
 		if self.configurations != nil && self.domain != nil && clientId != nil && self.connection != nil{
 			if let signUpURI = self.configurations!["SignUpURI"]{
 				if let serviceURL = URL(string: "https://\(self.domain!)\(signUpURI)"){
@@ -102,32 +102,32 @@ class Auth0Services {
 						let task = session.dataTask(with: request, completionHandler: { (data, response, error) in
 							if error == nil{
 								if let jsonResult = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) as? NSDictionary{
-									if jsonResult?["error"] != nil{
-										completionHandler(false)
+									if (jsonResult?["statusCode"]) != nil{
+										completionHandler(false,ErrorConstants.USER_EXISTS)
 									}else{
-										completionHandler(true)
+										completionHandler(true,nil)
 										
 									}
 								}else{
-									completionHandler(false)
+									completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 								}
 							}else{
-								completionHandler(false)
+								completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 							}
 						})
 						task.resume()
 					}else{
-						completionHandler(false)
+						completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 					}
 				}else{
-					completionHandler(false)
+					completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 				}
 			}else{
-				completionHandler(false)
+				completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 			}
 			
 		}else{
-			completionHandler(false)
+			completionHandler(false,ErrorConstants.INTERNAL_SERVER_ERROR)
 		}
 	}
 	

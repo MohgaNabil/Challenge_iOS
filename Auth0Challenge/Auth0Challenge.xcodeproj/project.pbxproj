@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A94B0F9A1F891CDB00F25830 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94B0F991F891CDB00F25830 /* Localizable.strings */; };
 		A94B0F9B1F891D4600F25830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94B0F9D1F891D4600F25830 /* Main.storyboard */; };
+		A94B0F9F1F89245800F25830 /* ErrorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B0F9E1F89245800F25830 /* ErrorConstants.swift */; };
 		A95AA9DB1F88455E00171724 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95AA9DA1F88455E00171724 /* UserProfileViewController.swift */; };
 		A9B08CD01F87F45C0034EE52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B08CCF1F87F45C0034EE52 /* AppDelegate.swift */; };
 		A9B08CD21F87F45C0034EE52 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B08CD11F87F45C0034EE52 /* AuthViewController.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		A94B0F991F891CDB00F25830 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A94B0F9C1F891D4600F25830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A94B0F9E1F89245800F25830 /* ErrorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorConstants.swift; sourceTree = "<group>"; };
 		A95AA9DA1F88455E00171724 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		A9B08CCC1F87F45C0034EE52 /* Auth0Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auth0Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B08CCF1F87F45C0034EE52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				A9B08D061F88189D0034EE52 /* UserProfile.swift */,
+				A94B0F9E1F89245800F25830 /* ErrorConstants.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				A9B08D071F88189D0034EE52 /* UserProfile.swift in Sources */,
 				A9B08CD21F87F45C0034EE52 /* AuthViewController.swift in Sources */,
 				A9B08CFF1F87F5110034EE52 /* Auth0Services.swift in Sources */,
+				A94B0F9F1F89245800F25830 /* ErrorConstants.swift in Sources */,
 				A9B08CD01F87F45C0034EE52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
